@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace xamarin_main_ludogenos.Views
+namespace xamarin_main_ludogenos.Models
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Form : ContentPage
@@ -17,9 +17,6 @@ namespace xamarin_main_ludogenos.Views
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
