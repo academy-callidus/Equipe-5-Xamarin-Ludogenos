@@ -16,5 +16,10 @@ namespace xamarin_main_ludogenos.Views
         {
             InitializeComponent();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

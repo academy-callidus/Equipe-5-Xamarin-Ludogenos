@@ -15,10 +15,9 @@ namespace xamarin_main_ludogenos
             InitializeComponent();
 
         }
-
-        private void ImageButtonBarcode_ClickedAsync(object sender, EventArgs e)
+        private void ImageButtonTest_ClickedAsync(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Models.Barcode());
+            Navigation.PushAsync(new Models.Test());
         }
 
         private void ImageButtonQR_ClickedAsync(object sender, EventArgs e)
@@ -26,10 +25,11 @@ namespace xamarin_main_ludogenos
             Navigation.PushAsync(new Models.QRCode());
         }
 
-        private void ImageButtonTest_ClickedAsync(object sender, EventArgs e)
+        private void ImageButtonBarcode_ClickedAsync(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Models.Test());
+            Navigation.PushAsync(new Models.Barcode());
         }
+
 
         private void ImageButtonTxt_ClickedAsync(object sender, EventArgs e)
         {
@@ -41,27 +41,27 @@ namespace xamarin_main_ludogenos
             Navigation.PushAsync(new Models.Settings());
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private void ImageButtonForm(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Models.Form());
+        }
+
+        private void ImageButtonImagem(object sender, EventArgs e)
         {
 
         }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        private void ImageButtonAdvancePaper(object sender, EventArgs e)
         {
 
         }
 
-        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        private void ImageButtonMsitef(object sender, EventArgs e)
         {
 
         }
 
-        private void ImageButton_Clicked_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ImageButton_Clicked_4(object sender, EventArgs e)
+        private void ImageButtonPayGo(object sender, EventArgs e)
         {
 
         }
