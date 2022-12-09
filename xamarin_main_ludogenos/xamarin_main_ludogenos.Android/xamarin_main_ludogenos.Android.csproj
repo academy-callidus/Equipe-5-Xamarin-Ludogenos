@@ -124,16 +124,49 @@
     <AndroidResource Include="Resources\drawable\tecto.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\com.png" />
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\advance.png">
+      <Link>Resources\drawable\advance.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\text.png" />
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\bar.png">
+      <Link>Resources\drawable\bar.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bar.png" />
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\com.png">
+      <Link>Resources\drawable\com.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\QR.png" />
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\form.png">
+      <Link>Resources\drawable\form.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\img.png">
+      <Link>Resources\drawable\img.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\m.png">
+      <Link>Resources\drawable\m.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\pay.png">
+      <Link>Resources\drawable\pay.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\text.png">
+      <Link>Resources\drawable\text.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\..\..\..\..\Downloads\Callidus\QR.png">
+      <Link>Resources\drawable\QR.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

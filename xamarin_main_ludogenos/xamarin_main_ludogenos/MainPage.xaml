@@ -5,7 +5,7 @@
              BackgroundColor="LightGray"
               Title="App Xamarin Ludogenos">
     <ContentPage.ToolbarItems>
-        
+
         <ToolbarItem IconImageSource="setting.png"
                      Clicked="SettingsButton" />
 
@@ -15,7 +15,7 @@
     <StackLayout>
         <Frame BackgroundColor="LightGray" Padding="10" CornerRadius="0">
             <Label Text="By Tectoy" HorizontalTextAlignment="Center" TextColor="black" FontSize="20" FontAttributes="Bold"/>
-           
+
         </Frame>
 
 
@@ -23,7 +23,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="100" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -31,12 +34,15 @@
             </Grid.ColumnDefinitions>
 
 
-
-            <ImageButton Clicked="ImageButtonTest_ClickedAsync" Source="com.png" Grid.Row="0" Grid.Column="0" BackgroundColor="White" />
+            <ImageButton Clicked="ImageButtonTest_ClickedAsync" Source="bar.png" Grid.Row="0" Grid.Column="0" BackgroundColor="White" />
             <ImageButton Clicked="ImageButtonQR_ClickedAsync" Source="QR.png" Grid.Row="0" Grid.Column="1" BackgroundColor="White"/>
-            <ImageButton Clicked="ImageButtonBarcode_ClickedAsync" Source="bar.png" Grid.Row="1" Grid.Column="0" BackgroundColor="White"/>
+            <ImageButton Clicked="ImageButtonBarcode_ClickedAsync" Source="form.png" Grid.Row="1" Grid.Column="0" BackgroundColor="White"/>
             <ImageButton Clicked="ImageButtonTxt_ClickedAsync" Source="text.png" Grid.Row="1" Grid.Column="1" BackgroundColor="White"/>
-
+            <ImageButton Clicked="ImageButton_Clicked" Source="img.png" Grid.Row="2" Grid.Column="0" BackgroundColor="White"/>
+            <ImageButton Clicked="ImageButton_Clicked_1" Source="advance.png" Grid.Row="2" Grid.Column="1" BackgroundColor="White"/>
+            <ImageButton Clicked="ImageButton_Clicked_2" Source="pay.png" Grid.Row="3" Grid.Column="0" BackgroundColor="White"/>
+            <ImageButton Clicked="ImageButton_Clicked_3" Source="m.png" Grid.Row="3" Grid.Column="1" BackgroundColor="White"/>
+            <ImageButton Clicked="ImageButton_Clicked_4" Source="com.png" Grid.Row="4" Grid.Column="0" BackgroundColor="White"/>
 
         </Grid>
     </StackLayout>
