@@ -1,12 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="xamarin_main_ludogenos.Views.Paygo">
+             x:Class="xamarin_main_ludogenos.Models.Paygo">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <!--COLOCAR O VALOR -->
+            <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+                <Label Text="Valor" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="printerValor" HorizontalOptions="Start" IsReadOnly="True" Placeholder="                                                                     "></Entry>
+                <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
+            </StackLayout>
+
+            <!--COLOCAR AS PARCELAS -->
+            <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+                <Label Text="Parcelas" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="printerParcela" HorizontalOptions="Start" IsReadOnly="True" Placeholder="                                                              "></Entry>
+                <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
+            </StackLayout>
+
+            <!--COLOCAR tIPO DE PAGAMENTO -->
+            <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+                <Label Text="Tipo de Pagamento" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Label Text="Não Definido" TextColor="Red" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
+            </StackLayout>
+
+            <!--COLOCAR Adquirente -->
+            <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+                <Label Text="Adquirente" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="printerName" HorizontalOptions="Start" IsReadOnly="False" Placeholder=" "></Entry>
+                <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
+            </StackLayout>
+
+            <!--COLOCAR tipo de parcelamento -->
+            <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+                <Label Text="Tipo Parcelamento" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="printerParcelamento" HorizontalOptions="Start" IsReadOnly="True" Placeholder=""></Entry>
+                <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
+            </StackLayout>
+
+            <!--AQUI ESTÁ A ESCOLHA DOs quadradinhos de marcar -->
+            <StackLayout Padding="0, 0, 0, 0">
+                <FlexLayout BackgroundColor="Gray" JustifyContent="Start"  Padding="20">
+
+                    <Label Text="Confirmação Manual" TextColor="White" FontAttributes="Bold" FontSize="15" ></Label>
+
+                    <CheckBox Color="White" IsChecked="False" CheckedChanged="CMChanged"></CheckBox>
+
+                    <Label Text="Via Completa" TextColor="White" FontAttributes="Bold" FontSize="15"></Label>
+
+                    <CheckBox Color="White" IsChecked="False" CheckedChanged="VCChanged" ></CheckBox>
+                </FlexLayout>
+
+                <FlexLayout BackgroundColor="Gray" JustifyContent="Start"  Padding="20">
+                    <Label Text="Via Loja e Cliente" TextColor="White" FontAttributes="Bold" FontSize="15" ></Label>
+
+                    <CheckBox Color="White" IsChecked="False" CheckedChanged="VLCChanged"></CheckBox>
+
+                    <Label Text="Interface Alternativa" TextColor="White" FontAttributes="Bold" FontSize="15"></Label>
+
+                    <CheckBox Color="White" IsChecked="False" CheckedChanged="IAChanged" ></CheckBox>
+
+                </FlexLayout>
+            </StackLayout>
+
+            <!--BOTOES -->
+            <Button Text="PAGAR"
+                    TextColor="White" FontSize="20"
+                    BackgroundColor="Red"  VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"/>
+
+            <Button Text="ADMINISTRATIVO"
+                    TextColor="White" FontSize="20"
+                    BackgroundColor="Red"  VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"/>
+
+            <Button Text="CANCELAR"
+                    TextColor="White" FontSize="20"
+                    BackgroundColor="Red"  VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

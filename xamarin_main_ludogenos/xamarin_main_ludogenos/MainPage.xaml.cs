@@ -63,7 +63,7 @@ namespace xamarin_main_ludogenos
 
         private void ImageButtonPayGo(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Models.Paygo());
         }
     }
 }
