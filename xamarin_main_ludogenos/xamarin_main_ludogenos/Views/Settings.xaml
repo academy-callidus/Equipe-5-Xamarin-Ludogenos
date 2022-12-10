@@ -34,7 +34,7 @@
        WidthRequest="80"
        BackgroundColor="RoyalBlue"
        TextColor="White"
-       FontSize="13"
+       FontSize="10"
        HorizontalOptions="Fill"
        VerticalOptions="Fill"/>
         </FlexLayout>
