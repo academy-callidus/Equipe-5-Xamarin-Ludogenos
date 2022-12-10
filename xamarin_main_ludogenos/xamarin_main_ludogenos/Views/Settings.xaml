@@ -23,12 +23,22 @@
 
                 <Label x:Name="MétodoText" TextColor="Blue" FontSize="15"></Label>
 
-               
 
 
+              
 
             </StackLayout>
+            <Button Text="Printer Infor" Clicked="Button_Clicked"  Margin="15"
+       CornerRadius="25"
+       HeightRequest="60"
+       WidthRequest="80"
+       BackgroundColor="RoyalBlue"
+       TextColor="White"
+       FontSize="13"
+       HorizontalOptions="Fill"
+       VerticalOptions="Fill"/>
         </FlexLayout>
+       
 
 
 

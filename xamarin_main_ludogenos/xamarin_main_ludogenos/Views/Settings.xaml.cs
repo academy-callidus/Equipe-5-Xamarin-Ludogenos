@@ -24,6 +24,10 @@ namespace xamarin_main_ludogenos.Models
             MétodoText.Text = "API";
 
         }
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page1Settings());
+        }
 
         async void OnClickMétodo(object sender, EventArgs e)
 
@@ -45,5 +49,6 @@ namespace xamarin_main_ludogenos.Models
         {
 
         }
+
     }
 }

@@ -13,6 +13,7 @@ namespace xamarin_main_ludogenos
             MainPage = new NavigationPage(new MainPage());
  
         }
+      
 
         protected override void OnStart()
         {

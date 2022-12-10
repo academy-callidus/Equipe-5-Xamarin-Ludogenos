@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using xamarin_main_ludogenos.Models;
+using xamarin_main_ludogenos.Views;
 
 namespace xamarin_main_ludogenos
 {
@@ -65,5 +67,10 @@ namespace xamarin_main_ludogenos
         {
             Navigation.PushAsync(new Models.Paygo());
         }
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page1Settings());
+        }
+
     }
 }
