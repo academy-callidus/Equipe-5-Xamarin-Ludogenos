@@ -3,12 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="xamarin_main_ludogenos.Models.Page1Settings"
              Title="Information Printer">
-    
-    <StackLayout Padding="10">
-        <Image  
-               Aspect="AspectFit" 
-               WidthRequest="300"
-               HeightRequest="300"/>
-        <Button Text="Voltar para Página 1" Clicked="btn_Clicked"/>
+
+    <StackLayout>
+        <!--Número de série -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Número de série" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20" />
+            <Label Text="333333333333" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="30"/>
+
+        </StackLayout>
+
+
+        <!--Modelo da impressora -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Modelo da impressora" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20"/>
+
+        </StackLayout>
+
+
+        <!--Cabeça de impressão-->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Cabeça de impressão" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20" />
+
+        </StackLayout>
+        <!--Impressora firmware Version -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Impressora firmware Version" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20"/>
+            <Label Text="V1.5" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" />
+
+        </StackLayout>
+        <!--Tamanho impressão -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Tamanho impressão" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20" />
+            <Label Text="58mm" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" />
+
+        </StackLayout>
+        <!--Distância impressão -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Distância impressão" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20"/>
+            <Label Text="4348mm" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        <!--Versão de serviço-->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Versão de serviço" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20"/>
+            <Label Text="4.13.9.8.na" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        <!--Versão de desenvolvimento -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Versão de desenvolvimento" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20"/>
+            <Label Text="210819001" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        <!--Tamanho impressão -->
+        <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+            <Label Text="Tamanho de impressão" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" Margin="20"/>
+            <Label Text="1.0" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="18" HorizontalOptions="CenterAndExpand" />
+
+           </StackLayout>
     </StackLayout>
-</ContentPage>
+    </ContentPage>
