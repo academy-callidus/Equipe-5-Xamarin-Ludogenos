@@ -21,6 +21,10 @@ namespace xamarin_main_ludogenos
         {
             Navigation.PushAsync(new Models.Test());
         }
+        private void ImageButtonAdvancePaper(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Models.Advance());
+        }
 
         private void ImageButtonQR_ClickedAsync(object sender, EventArgs e)
         {
@@ -53,10 +57,7 @@ namespace xamarin_main_ludogenos
 
         }
 
-        private void ImageButtonAdvancePaper(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void ImageButtonMsitef(object sender, EventArgs e)
         {
