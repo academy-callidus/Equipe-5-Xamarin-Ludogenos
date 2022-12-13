@@ -88,7 +88,8 @@ namespace xamarin_main_ludogenos.Models
             {
                 CharSetOption = option;
                 CharSetText.Text = option;
-            }
+
+    }
         }
         void SliderChanged(object sender, EventArgs e)
         {

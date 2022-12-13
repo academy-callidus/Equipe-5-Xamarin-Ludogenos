@@ -1,6 +1,8 @@
-﻿using System;
+﻿using BluetoothPrinter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,15 +15,18 @@ namespace xamarin_main_ludogenos.Models
     public partial class Paygo : ContentPage
     {
 
-        private string[] Strings = { "R$10", "R$50", "R$60", "R$100" };
+        private string[] Strings = { "Não Definido", "Débito", "Crédito", "Carteira Digital"};
+
         public Paygo()
         {
             InitializeComponent();
-            printerName.Text = "                                   Não Definido";
-            printerParcelamento.Text = "                                À Vista";
+            printerName.Text = "                    Não Definido";
+            printerParcelamento.Text = "                 À Vista";
 
         }
 
+        private string TextSize;
+        private string NaoDefinido;
         private bool IsCM;
         private bool IsVC;
         private bool IsVLC;
@@ -42,6 +47,17 @@ namespace xamarin_main_ludogenos.Models
         void IAChanged(object sender, CheckedChangedEventArgs e)
         {
             IsIA = e.Value;
+        }
+
+        async void OnClickCharSet(object sender, EventArgs e)
+        {
+            string option = await DisplayActionSheet("", "cancelar", null, Strings);
+
+            if (option != "cancelar" && option != null)
+            {
+                NaoDefinido = option;
+                printerName.Text = option;
+            }
         }
 
     }
