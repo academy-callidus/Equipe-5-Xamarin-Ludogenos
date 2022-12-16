@@ -20,12 +20,12 @@ namespace xamarin_main_ludogenos.Models
         public Paygo()
         {
             InitializeComponent();
+            opcaoName.Text = "Não Definido";
             printerName.Text = "                    Não Definido";
             printerParcelamento.Text = "                 À Vista";
 
         }
 
-        private string TextSize;
         private string NaoDefinido;
         private bool IsCM;
         private bool IsVC;
@@ -56,7 +56,7 @@ namespace xamarin_main_ludogenos.Models
             if (option != "cancelar" && option != null)
             {
                 NaoDefinido = option;
-                printerName.Text = option;
+                opcaoName.Text = option;
             }
         }
 

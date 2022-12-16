@@ -28,14 +28,12 @@
 
                 </FlexLayout.GestureRecognizers>
 
-                <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
-                    <Label Text="Tipo de Pagamento" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
-
-                    <Label Text="Não Definido"  TextColor="Red" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
-
-                    <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
+            <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
+                <Label Text="Tipo de Pagamento" TextColor="Black" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="Start" />
+                <Label x:Name="opcaoName"  TextColor="Red" VerticalOptions="CenterAndExpand" FontSize="20" HorizontalOptions="CenterAndExpand" />
+                <Image Source="arrow5.png" Rotation="180" WidthRequest="10" ></Image>
               
-                </StackLayout>
+            </StackLayout>
             </FlexLayout>
             <!--COLOCAR Adquirente -->
             <StackLayout Margin="0, 0, 0, 0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="10">
