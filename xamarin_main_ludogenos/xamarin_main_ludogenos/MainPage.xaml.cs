@@ -61,7 +61,7 @@ namespace xamarin_main_ludogenos
 
         private void ImageButtonMsitef(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Models.Msitef());
         }
 
         private void ImageButtonPayGo(object sender, EventArgs e)

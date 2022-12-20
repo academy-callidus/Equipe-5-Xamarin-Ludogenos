@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace xamarin_main_ludogenos.Views
+namespace xamarin_main_ludogenos.Models
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Msitef : ContentPage
+    public partial class Msitef: ContentPage
     {
         public Msitef()
         {
             InitializeComponent();
         }
+
+
     }
 }
